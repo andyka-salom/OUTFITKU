@@ -38,7 +38,7 @@
             </a>
           </li>
           <li class="sidebar-item">
-            <a class="sidebar-link" href="./ui-buttons.html" aria-expanded="false">
+            <a class="sidebar-link" href="./transaksi.html" aria-expanded="false">
               <span>
                 <i class="ti ti-article"></i>
               </span>
@@ -46,7 +46,7 @@
             </a>
           </li>
           <li class="sidebar-item">
-            <a class="sidebar-link" href="./ui-card.html" aria-expanded="false">
+            <a class="sidebar-link" href="./produk.html" aria-expanded="false">
               <span>
                 <i class="ti ti-cards"></i>
               </span>
@@ -54,7 +54,7 @@
             </a>
           </li>
           <li class="sidebar-item">
-            <a class="sidebar-link" href="./ui-forms.html" aria-expanded="false">
+            <a class="sidebar-link" href="./artikel.html" aria-expanded="false">
               <span>
                 <i class="ti ti-file-description"></i>
               </span>
@@ -119,15 +119,15 @@
             <div class="card-body">
               <div class="row">
                 <div class="col-md-12 mb-3">
-                  <button id="addArticleBtn" class="btn btn-success">Add Article</button>
-                </div>
+                  <button id="addArticleBtn" class="btn btn-success" onclick="location.href='add-article.html';">Add Article</button>
+              </div>              
                 <div class="col-md-4">
                   <div class="card">
                     <img src="../assets/images/products/s4.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <a href="#" class="btn btn-primary">Detail</a>
                     </div>
                   </div>
                 </div>
@@ -137,7 +137,7 @@
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <a href="#" class="btn btn-primary">Detail</a>
                     </div>
                   </div>
                 </div>
@@ -147,41 +147,10 @@
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <a href="#" class="btn btn-primary">Detail</a>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Modal -->
-        <div class="modal fade" id="addArticleModal" tabindex="-1" role="dialog" aria-labelledby="addArticleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="addArticleModalLabel">Add New Article</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <form id="addArticleForm">
-                  <div class="form-group">
-                    <label for="articleTitle">Title</label>
-                    <input type="text" class="form-control" id="articleTitle" required>
-                  </div>
-                  <div class="form-group">
-                    <label for="articleContent">Content</label>
-                    <textarea class="form-control" id="articleContent" rows="3" required></textarea>
-                  </div>
-                  <div class="form-group">
-                    <label for="articleImage">Image URL</label>
-                    <input type="url" class="form-control" id="articleImage" required>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Add Article</button>
-                </form>
               </div>
             </div>
           </div>
@@ -189,48 +158,11 @@
       </div>
     </div>
   </div>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
   <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
   <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../assets/js/sidebarmenu.js"></script>
   <script src="../assets/js/app.min.js"></script>
   <script src="../assets/libs/simplebar/dist/simplebar.js"></script>
-  <script>
-    document.getElementById('addArticleBtn').addEventListener('click', function() {
-      $('#addArticleModal').modal('show');
-    });
-  
-    document.getElementById('addArticleForm').addEventListener('submit', function(event) {
-      event.preventDefault();
-  
-      const title = document.getElementById('articleTitle').value;
-      const content = document.getElementById('articleContent').value;
-      const imageUrl = document.getElementById('articleImage').value;
-  
-      const newCard = `
-        <div class="col-md-4">
-          <div class="card">
-            <img src="${imageUrl}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">${title}</h5>
-              <p class="card-text">${content}</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-      `;
-  
-      document.querySelector('.row').insertAdjacentHTML('beforeend', newCard);
-      $('#addArticleModal').modal('hide');
-      document.getElementById('addArticleForm').reset();
-    });
-  </script>
 </body>
 
 </html>
