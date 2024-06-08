@@ -23,20 +23,17 @@
       <div class="site-navbar-top">
         <div class="container">
           <div class="row align-items-center">
-    
             <div id="siteSearch" class="col-6 col-md-4 order-2 order-md-1 site-search-icon text-left">
               <form action="" class="site-block-top-search">
                 <span class="icon icon-search2"></span>
                 <input type="text" class="form-control border-0" placeholder="Search">
               </form>
             </div>
-    
             <div class="col-12 mb-3 mb-md-0 col-md-4 order-1 order-md-2 text-center">
               <div class="site-logo">
                 <a href="index.html" class="js-logo-clone">OUTFITKU</a>
               </div>
             </div>
-    
             <div id="userNav" class="col-6 col-md-4 order-3 order-md-3 text-right">
               <div class="site-top-icons">
                 <ul>
@@ -52,7 +49,6 @@
                 </ul>
               </div>
             </div>
-    
           </div>
         </div>
       </div>
@@ -63,7 +59,6 @@
             <li><a href="about.html">About</a></li>
             <li><a href="shop.html">Shop</a></li>
             <li><a href="article.html">Article</a></li>
-            <li id="loginSignUp"><a href="login.html">Login / Sign-up</a></li>
           </ul>
         </div>
       </nav>
@@ -83,7 +78,7 @@
           <div class="col-md-6">
             <div class="block-16">
               <figure>
-                <img src="images/blog_1.jpg" alt="Image placeholder" class="img-fluid rounded">
+                <img src="images/about-us-information-service-sharing-join-concept.jpg" alt="Image placeholder" class="img-fluid rounded">
               </figure>
             </div>
           </div>
@@ -269,39 +264,6 @@
   <script src="js/aos.js"></script>
 
   <script src="js/main.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-    const userNav = document.getElementById('userNav');
-    const siteMenu = document.getElementById('siteMenu');
-    const siteSearch = document.getElementById('siteSearch');
-    const loginSignUp = document.getElementById('loginSignUp');
-  
-    // Cek localStorage untuk userType
-    const userType = localStorage.getItem('userType');
-  
-    if (userType === 'user') {
-      // Jika userType = 1, tampilkan semua elemen navbar
-      userNav.style.display = 'block';
-      siteMenu.innerHTML += `
-        <li><a href="history.html">History Order</a></li>
-        <li><a href="logout.html">Logout</a></li>
-      `;
-      if (loginSignUp) {
-        loginSignUp.style.display = 'none';
-      }
-    } else {
-      // Jika localStorage kosong, sembunyikan elemen-elemen tertentu
-      userNav.style.display = 'none';
-      siteMenu.innerHTML = `
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="article.html">Article</a></li>
-        <li><a href="login.html">Login / Sign-up</a></li>
-      `;
-    }
-  });
-  
-  </script>
+  <script src="js/login.js"></script>
   </body>
 </html>

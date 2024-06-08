@@ -59,7 +59,6 @@
             <li><a href="about.html">About</a></li>
             <li><a href="shop.html">Shop</a></li>
             <li><a href="article.html">Article</a></li>
-            <li id="loginSignUp"><a href="login.html">Login / Sign-up</a></li>
           </ul>
         </div>
       </nav>
@@ -171,38 +170,6 @@
   <script src="js/aos.js"></script>
 
   <script src="js/main.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-    const userNav = document.getElementById('userNav');
-    const siteMenu = document.getElementById('siteMenu');
-    const siteSearch = document.getElementById('siteSearch');
-    const loginSignUp = document.getElementById('loginSignUp');
-
-    // Cek localStorage untuk userType
-    const userType = localStorage.getItem('userType');
-
-    if (userType === 'user') {
-      // Jika userType = 1, tampilkan semua elemen navbar
-      userNav.style.display = 'block';
-      siteMenu.innerHTML += `
-        <li><a href="history.html">History Order</a></li>
-        <li><a href="logout.html">Logout</a></li>
-      `;
-      if (loginSignUp) {
-        loginSignUp.style.display = 'none';
-      }
-    } else {
-      // Jika localStorage kosong, sembunyikan elemen-elemen tertentu
-      userNav.style.display = 'none';
-      siteMenu.innerHTML = `
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="article.html">Article</a></li>
-        <li><a href="login.html">Login / Sign-up</a></li>
-      `;
-    }
-  });
-  </script>
+  <script src="js/login.js"></script>
   </body>
 </html>

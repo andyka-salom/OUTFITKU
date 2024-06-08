@@ -752,7 +752,21 @@ a {
   border-radius: 50%;
   margin-bottom: 20px; }
 
-  .block-4 {
-    border-radius: 25px; /* Atur radius yang diinginkan */
-    overflow: hidden; /* Pastikan elemen berbentuk kotak dengan radius yang diatur */
+.block-4 {
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.img-fluid.rounded {
+  border-radius: 10px;
+}
+
+.block-2-item {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.image {
+  border-radius: 10px; 
+  overflow: hidden; 
 }

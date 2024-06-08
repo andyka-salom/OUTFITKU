@@ -56,7 +56,6 @@
             <li><a href="about.html">About</a></li>
             <li><a href="shop.html">Shop</a></li>
             <li><a href="article.html">Article</a></li>
-            <li id="loginSignUp"><a href="login.html">Login / Sign-up</a></li>
           </ul>
         </div>
       </nav>
@@ -69,7 +68,7 @@
             <div class="intro-text text-center text-md-left">
               <p class="mb-4">Temukan OUTFIT sempurna untuk setiap kesempatan dengan koleksi kami. Berbelanja sekarang dan tampilkan yang terbaik setiap hari!</p>
               <p>
-                <a href="#" class="btn btn-sm btn-primary">Shop Now</a>
+                <a href="#" class="btn btn-sm btn-primary">Beli Sekarang</a>
               </p>
             </div>
           </div>
@@ -117,7 +116,7 @@
           <div class="col-sm-6 col-md-6 col-lg-4 mb-4 mb-lg-0" data-aos="fade" data-aos-delay="">
             <a class="block-2-item" href="#">
               <figure class="image">
-                <img src="images/women.jpg" alt="" class="img-fluid">
+                <img src="images/young-woman-grey-dress-with-hat-glasses.jpg" alt="" class="img-fluid">
               </figure>
               <div class="text">
                 <span class="text-uppercase">Collections</span>
@@ -128,7 +127,7 @@
           <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="100">
             <a class="block-2-item" href="#">
               <figure class="image">
-                <img src="images/children.jpg" alt="" class="img-fluid">
+                <img src="images/asian-girl-posing.jpg" alt="" class="img-fluid">
               </figure>
               <div class="text">
                 <span class="text-uppercase">Collections</span>
@@ -139,7 +138,7 @@
           <div class="col-sm-6 col-md-6 col-lg-4 mb-5 mb-lg-0" data-aos="fade" data-aos-delay="200">
             <a class="block-2-item" href="#">
               <figure class="image">
-                <img src="images/men.jpg" alt="" class="img-fluid">
+                <img src="images/portrait-male-tennis-player.jpg" alt="" class="img-fluid">
               </figure>
               <div class="text">
                 <span class="text-uppercase">Collections</span>
@@ -234,11 +233,11 @@
             <a href="#"><img src="images/kaosrendah.jpg" alt="Image placeholder" class="img-fluid rounded"></a>
           </div>
           <div class="col-md-12 col-lg-5 text-center pl-md-5">
-            <h2><a href="#">50% less in all items</a></h2>
+            <h2><a href="#">50% Diskon Seluruh item</a></h2>
             <p class="post-meta mb-4">By <a href="#">Carl Smith</a> <span class="block-8-sep">&bullet;</span> September 3, 2024</p>
             <p>
               Nikmati diskon besar-besaran! Dapatkan potongan harga 50% untuk semua item di toko kami. Jangan lewatkan kesempatan ini untuk berbelanja lebih hemat dan memperbarui koleksi Anda dengan harga yang luar biasa!</p>
-            <p><a href="#" class="btn btn-primary btn-sm">Shop Now</a></p>
+            <p><a href="#" class="btn btn-primary btn-sm">Beli Sekarang</a></p>
           </div>
         </div>
       </div>
@@ -307,38 +306,6 @@
   <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-    const userNav = document.getElementById('userNav');
-    const siteMenu = document.getElementById('siteMenu');
-    const siteSearch = document.getElementById('siteSearch');
-    const loginSignUp = document.getElementById('loginSignUp');
-
-    // Cek localStorage untuk userType
-    const userType = localStorage.getItem('userType');
-
-    if (userType === 'user') {
-      // Jika userType = 1, tampilkan semua elemen navbar
-      userNav.style.display = 'block';
-      siteMenu.innerHTML += `
-        <li><a href="history.html">History Order</a></li>
-        <li><a href="logout.html">Logout</a></li>
-      `;
-      if (loginSignUp) {
-        loginSignUp.style.display = 'none';
-      }
-    } else {
-      // Jika localStorage kosong, sembunyikan elemen-elemen tertentu
-      userNav.style.display = 'none';
-      siteMenu.innerHTML = `
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="article.html">Article</a></li>
-        <li><a href="login.html">Login / Sign-up</a></li>
-      `;
-    }
-  });
-  </script>
+  <script src="js/login.js"></script>
   </body>
 </html>

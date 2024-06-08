@@ -4,70 +4,74 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Modernize Free</title>
-  <link rel="shortcut icon" type="image/png" href="../assets/images/logos/favicon.png" />
+  <title>Outfitku</title>
   <link rel="stylesheet" href="../assets/css/styles.min.css" />
-  
 </head>
 
 <body>
   <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
-  data-sidebar-position="fixed" data-header-position="fixed">
-  <aside class="left-sidebar">
-    <div>
-      <div class="brand-logo d-flex align-items-center justify-content-between">
-        <a href="./index.html" class="text-nowrap logo-img">
-          <!-- <img src="../assets/images/logos/dark-logo.svg" width="180" alt="" /> -->
-        </a>
-        <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
-          <i class="ti ti-x fs-8"></i>
+    data-sidebar-position="fixed" data-header-position="fixed">
+    <aside class="left-sidebar">
+      <div>
+        <div class="brand-logo d-flex align-items-center justify-content-between">
+          <a href="./index.html" class="text-nowrap logo-img">
+            <img src="../images/Screenshot 2024-06-08 204439.png" width="180" alt="" />
+          </a>
+          <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+            <i class="ti ti-x fs-8"></i>
+          </div>
         </div>
+        <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
+          <ul id="sidebarnav">
+            <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">Home</span>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./index.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-layout-dashboard"></i>
+                </span>
+                <span class="hide-menu">Dashboard</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./transaksi.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-article"></i>
+                </span>
+                <span class="hide-menu">Kelola Transaksi</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./produk.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-cards"></i>
+                </span>
+                <span class="hide-menu">Kelola Produk</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./artikel.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-file-description"></i>
+                </span>
+                <span class="hide-menu">Kelola Artikel</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="./kelolapengguna.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-user"></i>
+                </span>
+                <span class="hide-menu">Kelola Pengguna</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
-        <ul id="sidebarnav">
-          <li class="nav-small-cap">
-            <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-            <span class="hide-menu">Home</span>
-          </li>
-          <li class="sidebar-item">
-            <a class="sidebar-link" href="./index.html" aria-expanded="false">
-              <span>
-                <i class="ti ti-layout-dashboard"></i>
-              </span>
-              <span class="hide-menu">Dashboard</span>
-            </a>
-          </li>
-          <li class="sidebar-item">
-            <a class="sidebar-link" href="./transaksi.html" aria-expanded="false">
-              <span>
-                <i class="ti ti-article"></i>
-              </span>
-              <span class="hide-menu">Kelola Transaksi</span>
-            </a>
-          </li>
-          <li class="sidebar-item">
-            <a class="sidebar-link" href="./produk.html" aria-expanded="false">
-              <span>
-                <i class="ti ti-cards"></i>
-              </span>
-              <span class="hide-menu">Kelola Produk</span>
-            </a>
-          </li>
-          <li class="sidebar-item">
-            <a class="sidebar-link" href="./artikel.html" aria-expanded="false">
-              <span>
-                <i class="ti ti-file-description"></i>
-              </span>
-              <span class="hide-menu">Kelola Artikel</span>
-            </a>
-          </li>
-      </nav>
-      <!-- End Sidebar navigation -->
-    </div>
-      <!-- End Sidebar scroll-->
     </aside>
     <div class="body-wrapper">
-      <!--  Header Start -->
       <header class="app-header">
         <nav class="navbar navbar-expand-lg navbar-light">
           <ul class="navbar-nav">
@@ -77,10 +81,6 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-icon-hover" href="javascript:void(0)">
-                <i class="ti ti-bell-ringing"></i>
-                <div class="notification bg-primary rounded-circle"></div>
-              </a>
             </li>
           </ul>
           <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
@@ -92,19 +92,7 @@
                 </a>
                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
                   <div class="message-body">
-                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
-                      <i class="ti ti-user fs-6"></i>
-                      <p class="mb-0 fs-3">My Profile</p>
-                    </a>
-                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
-                      <i class="ti ti-mail fs-6"></i>
-                      <p class="mb-0 fs-3">My Account</p>
-                    </a>
-                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
-                      <i class="ti ti-list-check fs-6"></i>
-                      <p class="mb-0 fs-3">My Task</p>
-                    </a>
-                    <a href="./authentication-login.html" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>
+                    <a href="#" id="logoutBtn" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</a>
                   </div>
                 </div>
               </li>
@@ -123,19 +111,12 @@
             <div class="col-sm-6 col-xl-3">
               <div class="card overflow-hidden rounded-2">
                 <div class="position-relative">
-                  <a href="javascript:void(0)"><img src="../assets/images/products/s4.jpg" class="card-img-top rounded-0" alt="..."></a>
-                  <a href="javascript:void(0)" class="bg-primary rounded-circle p-2 text-white d-inline-flex position-absolute bottom-0 end-0 mb-n3 me-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add To Cart"><i class="ti ti-basket fs-4"></i></a>                      </div>
+                  <a href="javascript:void(0)"><img src="../images/sepatu.jpg" class="card-img-top rounded-0" alt="..."></a>
+                </div>
                 <div class="card-body pt-3 p-4">
-                  <h6 class="fw-semibold fs-4">Boat Headphone</h6>
+                  <h6 class="fw-semibold fs-4">Sneakers</h6>
                   <div class="d-flex align-items-center justify-content-between">
-                    <h6 class="fw-semibold fs-4 mb-0">$50 <span class="ms-2 fw-normal text-muted fs-3"><del>$65</del></span></h6>
-                    <ul class="list-unstyled d-flex align-items-center mb-0">
-                      <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                      <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                      <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                      <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                      <li><a class="" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                    </ul>
+                    <h6 class="fw-semibold fs-4 mb-0">Rp 50.000</h6>
                   </div>
                 </div>
               </div>
@@ -143,19 +124,12 @@
             <div class="col-sm-6 col-xl-3">
               <div class="card overflow-hidden rounded-2">
                 <div class="position-relative">
-                  <a href="javascript:void(0)"><img src="../assets/images/products/s5.jpg" class="card-img-top rounded-0" alt="..."></a>
-                  <a href="javascript:void(0)" class="bg-primary rounded-circle p-2 text-white d-inline-flex position-absolute bottom-0 end-0 mb-n3 me-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add To Cart"><i class="ti ti-basket fs-4"></i></a>                      </div>
+                  <a href="javascript:void(0)"><img src="../images/man-wearing-blank-shirt.jpg" class="card-img-top rounded-0" alt="..."></a>
+                </div>
                 <div class="card-body pt-3 p-4">
-                  <h6 class="fw-semibold fs-4">MacBook Air Pro</h6>
+                  <h6 class="fw-semibold fs-4">Kaos Polo</h6>
                   <div class="d-flex align-items-center justify-content-between">
-                    <h6 class="fw-semibold fs-4 mb-0">$650 <span class="ms-2 fw-normal text-muted fs-3"><del>$900</del></span></h6>
-                    <ul class="list-unstyled d-flex align-items-center mb-0">
-                      <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                      <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                      <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                      <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                      <li><a class="" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                    </ul>
+                    <h6 class="fw-semibold fs-4 mb-0">Rp 100.000</h6>
                   </div>
                 </div>
               </div>
@@ -163,19 +137,12 @@
             <div class="col-sm-6 col-xl-3">
               <div class="card overflow-hidden rounded-2">
                 <div class="position-relative">
-                  <a href="javascript:void(0)"><img src="../assets/images/products/s7.jpg" class="card-img-top rounded-0" alt="..."></a>
-                  <a href="javascript:void(0)" class="bg-primary rounded-circle p-2 text-white d-inline-flex position-absolute bottom-0 end-0 mb-n3 me-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add To Cart"><i class="ti ti-basket fs-4"></i></a>                      </div>
+                  <a href="javascript:void(0)"><img src="../images/kaostinggi.jpg" class="card-img-top rounded-0" alt="..."></a>
+                </div>
                 <div class="card-body pt-3 p-4">
-                  <h6 class="fw-semibold fs-4">Red Valvet Dress</h6>
+                  <h6 class="fw-semibold fs-4">Kaos</h6>
                   <div class="d-flex align-items-center justify-content-between">
-                    <h6 class="fw-semibold fs-4 mb-0">$150 <span class="ms-2 fw-normal text-muted fs-3"><del>$200</del></span></h6>
-                    <ul class="list-unstyled d-flex align-items-center mb-0">
-                      <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                      <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                      <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                      <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                      <li><a class="" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                    </ul>
+                    <h6 class="fw-semibold fs-4 mb-0">Rp 50.000</h6>
                   </div>
                 </div>
               </div>
@@ -183,19 +150,12 @@
             <div class="col-sm-6 col-xl-3">
               <div class="card overflow-hidden rounded-2">
                 <div class="position-relative">
-                  <a href="javascript:void(0)"><img src="../assets/images/products/s11.jpg" class="card-img-top rounded-0" alt="..."></a>
-                  <a href="javascript:void(0)" class="bg-primary rounded-circle p-2 text-white d-inline-flex position-absolute bottom-0 end-0 mb-n3 me-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add To Cart"><i class="ti ti-basket fs-4"></i></a>                      </div>
+                  <a href="javascript:void(0)"><img src="../images/men-s-apparel-hoodie-rear-view.jpg" class="card-img-top rounded-0" alt="..."></a>
+                </div>
                 <div class="card-body pt-3 p-4">
-                  <h6 class="fw-semibold fs-4">Cute Soft Teddybear</h6>
+                  <h6 class="fw-semibold fs-4">Hoodie</h6>
                   <div class="d-flex align-items-center justify-content-between">
-                    <h6 class="fw-semibold fs-4 mb-0">$285 <span class="ms-2 fw-normal text-muted fs-3"><del>$345</del></span></h6>
-                    <ul class="list-unstyled d-flex align-items-center mb-0">
-                      <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                      <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                      <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                      <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                      <li><a class="" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                    </ul>
+                    <h6 class="fw-semibold fs-4 mb-0">Rp 150.000</h6>
                   </div>
                 </div>
               </div>
@@ -204,19 +164,12 @@
           <div class="col-sm-6 col-xl-3">
             <div class="card overflow-hidden rounded-2">
               <div class="position-relative">
-                <a href="javascript:void(0)"><img src="../assets/images/products/s4.jpg" class="card-img-top rounded-0" alt="..."></a>
-                <a href="javascript:void(0)" class="bg-primary rounded-circle p-2 text-white d-inline-flex position-absolute bottom-0 end-0 mb-n3 me-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add To Cart"><i class="ti ti-basket fs-4"></i></a>                      </div>
+                <a href="javascript:void(0)"><img src="../images/sepatu.jpg" class="card-img-top rounded-0" alt="..."></a>
+              </div>
               <div class="card-body pt-3 p-4">
-                <h6 class="fw-semibold fs-4">Boat Headphone</h6>
+                <h6 class="fw-semibold fs-4">Sneakers</h6>
                 <div class="d-flex align-items-center justify-content-between">
-                  <h6 class="fw-semibold fs-4 mb-0">$50 <span class="ms-2 fw-normal text-muted fs-3"><del>$65</del></span></h6>
-                  <ul class="list-unstyled d-flex align-items-center mb-0">
-                    <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                    <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                    <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                    <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                    <li><a class="" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                  </ul>
+                  <h6 class="fw-semibold fs-4 mb-0">Rp 250.000</h6>
                 </div>
               </div>
             </div>
@@ -224,19 +177,12 @@
           <div class="col-sm-6 col-xl-3">
             <div class="card overflow-hidden rounded-2">
               <div class="position-relative">
-                <a href="javascript:void(0)"><img src="../assets/images/products/s5.jpg" class="card-img-top rounded-0" alt="..."></a>
-                <a href="javascript:void(0)" class="bg-primary rounded-circle p-2 text-white d-inline-flex position-absolute bottom-0 end-0 mb-n3 me-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add To Cart"><i class="ti ti-basket fs-4"></i></a>                      </div>
+                <a href="javascript:void(0)"><img src="../images/man-wearing-blank-shirt.jpg" class="card-img-top rounded-0" alt="..."></a>
+              </div>
               <div class="card-body pt-3 p-4">
-                <h6 class="fw-semibold fs-4">MacBook Air Pro</h6>
+                <h6 class="fw-semibold fs-4">Kaos Polo</h6>
                 <div class="d-flex align-items-center justify-content-between">
-                  <h6 class="fw-semibold fs-4 mb-0">$650 <span class="ms-2 fw-normal text-muted fs-3"><del>$900</del></span></h6>
-                  <ul class="list-unstyled d-flex align-items-center mb-0">
-                    <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                    <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                    <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                    <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                    <li><a class="" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                  </ul>
+                  <h6 class="fw-semibold fs-4 mb-0">Rp 100.000</h6>
                 </div>
               </div>
             </div>
@@ -244,19 +190,12 @@
           <div class="col-sm-6 col-xl-3">
             <div class="card overflow-hidden rounded-2">
               <div class="position-relative">
-                <a href="javascript:void(0)"><img src="../assets/images/products/s7.jpg" class="card-img-top rounded-0" alt="..."></a>
-                <a href="javascript:void(0)" class="bg-primary rounded-circle p-2 text-white d-inline-flex position-absolute bottom-0 end-0 mb-n3 me-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add To Cart"><i class="ti ti-basket fs-4"></i></a>                      </div>
+                <a href="javascript:void(0)"><img src="../images/portrait-male-tennis-player.jpg" class="card-img-top rounded-0" alt="..."></a>
+              </div>
               <div class="card-body pt-3 p-4">
-                <h6 class="fw-semibold fs-4">Red Valvet Dress</h6>
+                <h6 class="fw-semibold fs-4">Tennis Outfit</h6>
                 <div class="d-flex align-items-center justify-content-between">
-                  <h6 class="fw-semibold fs-4 mb-0">$150 <span class="ms-2 fw-normal text-muted fs-3"><del>$200</del></span></h6>
-                  <ul class="list-unstyled d-flex align-items-center mb-0">
-                    <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                    <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                    <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                    <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                    <li><a class="" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                  </ul>
+                  <h6 class="fw-semibold fs-4 mb-0">Rp 250.000</h6>
                 </div>
               </div>
             </div>
@@ -264,19 +203,12 @@
           <div class="col-sm-6 col-xl-3">
             <div class="card overflow-hidden rounded-2">
               <div class="position-relative">
-                <a href="javascript:void(0)"><img src="../assets/images/products/s11.jpg" class="card-img-top rounded-0" alt="..."></a>
-                <a href="javascript:void(0)" class="bg-primary rounded-circle p-2 text-white d-inline-flex position-absolute bottom-0 end-0 mb-n3 me-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add To Cart"><i class="ti ti-basket fs-4"></i></a>                      </div>
+                <a href="javascript:void(0)"><img src="../images/men-s-apparel-hoodie-rear-view.jpg" class="card-img-top rounded-0" alt="..."></a>
+              </div>
               <div class="card-body pt-3 p-4">
-                <h6 class="fw-semibold fs-4">Cute Soft Teddybear</h6>
+                <h6 class="fw-semibold fs-4">Hoodie</h6>
                 <div class="d-flex align-items-center justify-content-between">
-                  <h6 class="fw-semibold fs-4 mb-0">$285 <span class="ms-2 fw-normal text-muted fs-3"><del>$345</del></span></h6>
-                  <ul class="list-unstyled d-flex align-items-center mb-0">
-                    <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                    <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                    <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                    <li><a class="me-1" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                    <li><a class="" href="javascript:void(0)"><i class="ti ti-star text-warning"></i></a></li>
-                  </ul>
+                  <h6 class="fw-semibold fs-4 mb-0">Rp 150.000</h6>
                 </div>
               </div>
             </div>
@@ -291,6 +223,7 @@
   <script src="../assets/js/sidebarmenu.js"></script>
   <script src="../assets/js/app.min.js"></script>
   <script src="../assets/libs/simplebar/dist/simplebar.js"></script>
+  <script src="../js/login.js"></script>
 </body>
 
 </html>
