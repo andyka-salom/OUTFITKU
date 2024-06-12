@@ -17,41 +17,44 @@
     
   </head>
   <body>
+    <div class="site-wrap">
+      <header class="site-navbar" role="banner">
+        <div class="site-navbar-top">
+          <div class="container">
+            <div class="row align-items-center">
   
-  <div class="site-wrap">
-    <header class="site-navbar" role="banner">
-      <div class="site-navbar-top">
-        <div class="container">
-          <div class="row align-items-center">
-            <div id="siteSearch" class="col-6 col-md-4 order-2 order-md-1 site-search-icon text-left">
-              <form action="" class="site-block-top-search">
-                <span class="icon icon-search2"></span>
-                <input type="text" class="form-control border-0" placeholder="Search">
-              </form>
-            </div>
-            <div class="col-12 mb-3 mb-md-0 col-md-4 order-1 order-md-2 text-center">
-              <div class="site-logo">
-                <a href="index.html" class="js-logo-clone">OUTFITKU</a>
+              <div class="col-6 col-md-4 order-2 order-md-1 site-search-icon text-left">
+                <form action="" class="site-block-top-search">
+                  <span class="icon icon-search2"></span>
+                  <input type="text" class="form-control border-0" placeholder="Search">
+                </form>
               </div>
-            </div>
-            <div id="userNav" class="col-6 col-md-4 order-3 order-md-3 text-right">
-              <div class="site-top-icons">
-                <ul>
-                  <li><a href="#"><span class="icon icon-person"></span></a></li>
-                  <li><a href="#"><span class="icon icon-heart-o"></span></a></li>
-                  <li>
-                    <a href="cart.html" class="site-cart">
-                      <span class="icon icon-shopping_cart"></span>
-                      <span class="count">2</span>
-                    </a>
-                  </li>
-                  <li class="d-inline-block d-md-none ml-md-0"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu"></span></a></li>
-                </ul>
+  
+              <div class="col-12 mb-3 mb-md-0 col-md-4 order-1 order-md-2 text-center">
+                <div class="site-logo">
+                  <a href="index.html" class="js-logo-clone">OUTFITKU</a>
+                </div>
               </div>
+  
+              <div class="col-6 col-md-4 order-3 order-md-3 text-right">
+                <div class="site-top-icons">
+                  <ul>
+                    <li id="userIcon"><a href="#"><span class="icon icon-person"></span></a></li>
+                    <li id="heartIcon"><a href="#"><span class="icon icon-heart-o"></span></a></li>
+                    <li id="cartIcon">
+                      <a href="cart.html" class="site-cart">
+                        <span class="icon icon-shopping_cart"></span>
+                        <span class="count">2</span>
+                      </a>
+                    </li>
+                    <li class="d-inline-block d-md-none ml-md-0"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu"></span></a></li>
+                  </ul>
+                </div> 
+              </div>
+  
             </div>
           </div>
-        </div>
-      </div>
+        </div> 
       <nav class="site-navigation text-right text-md-center" role="navigation">
         <div class="container">
           <ul id="siteMenu" class="site-menu js-clone-nav d-none d-md-block">
@@ -278,58 +281,86 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td>Top Up T-Shirt <strong class="mx-2">x</strong> 1</td>
-                        <td>$250.00</td>
+                        <td>Kaos <strong class="mx-2">x</strong> 1</td>
+                        <td>Rp 50.000</td>
                       </tr>
                       <tr>
-                        <td>Polo Shirt <strong class="mx-2">x</strong>   1</td>
-                        <td>$100.00</td>
+                        <td>Kaos Polo <strong class="mx-2">x</strong>   1</td>
+                        <td>Rp 100.000</td>
                       </tr>
                       <tr>
-                        <td class="text-black font-weight-bold"><strong>Cart Subtotal</strong></td>
-                        <td class="text-black">$350.00</td>
+                        <td class="text-black font-weight-bold"><strong>total</strong></td>
+                        <td class="text-black">Rp 150.000</td>
                       </tr>
                       <tr>
-                        <td class="text-black font-weight-bold"><strong>Order Total</strong></td>
-                        <td class="text-black font-weight-bold"><strong>$350.00</strong></td>
+                        <td class="text-black font-weight-bold"><strong>Total Pemesanan</strong></td>
+                        <td class="text-black font-weight-bold"><strong>Rp 150.000</strong></td>
                       </tr>
                     </tbody>
                   </table>
 
                   <div class="border p-3 mb-3">
-                    <h3 class="h6 mb-0"><a class="d-block" data-toggle="collapse" href="#collapsebank" role="button" aria-expanded="false" aria-controls="collapsebank">Direct Bank Transfer</a></h3>
-
+                    <h3 class="h6 mb-0">
+                      <a class="d-block" data-toggle="collapse" href="#collapsebank" role="button" aria-expanded="false" aria-controls="collapsebank">Direct Bank Transfer</a>
+                    </h3>
                     <div class="collapse" id="collapsebank">
                       <div class="py-2">
-                        <p class="mb-0">Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.</p>
+                        <!-- Bank Mandiri -->
+                        <div class="mt-3">
+                          <h4 class="h6 mb-0">
+                            <a class="d-block" data-toggle="collapse" href="#collapseMandiri" role="button" aria-expanded="false" aria-controls="collapseMandiri">Bank Mandiri</a>
+                          </h4>
+                          <div class="collapse" id="collapseMandiri">
+                            <div class="py-2">
+                              <p class="mb-0">Account Number: 1234567890<br>Account Name: Outfitu</p>
+                              <div class="form-group mt-3">
+                                <label for="mandiri-proof">Unggah Bukti Pembayaran</label>
+                                <input type="file" class="form-control" id="mandiri-proof" required>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  
+                        <!-- BRI -->
+                        <div class="mt-3">
+                          <h4 class="h6 mb-0">
+                            <a class="d-block" data-toggle="collapse" href="#collapseBRI" role="button" aria-expanded="false" aria-controls="collapseBRI">BRI</a>
+                          </h4>
+                          <div class="collapse" id="collapseBRI">
+                            <div class="py-2">
+                              <p class="mb-0">Account Number: 0987654321<br>Account Name: Outfitu</p>
+                              <div class="form-group mt-3">
+                                <label for="bri-proof">Unggah Bukti Pembayaran</label>
+                                <input type="file" class="form-control" id="bri-proof" required>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  
+                        <!-- BCA -->
+                        <div class="mt-3">
+                          <h4 class="h6 mb-0">
+                            <a class="d-block" data-toggle="collapse" href="#collapseBCA" role="button" aria-expanded="false" aria-controls="collapseBCA">BCA</a>
+                          </h4>
+                          <div class="collapse" id="collapseBCA">
+                            <div class="py-2">
+                              <p class="mb-0">Account Number: 1122334455<br>Account Name: Outfitu</p>
+                              <div class="form-group mt-3">
+                                <label for="bca-proof">Unggah Bukti Pembayaran</label>
+                                <input type="file" class="form-control" id="bca-proof" required>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  
                       </div>
                     </div>
                   </div>
-
-                  <div class="border p-3 mb-3">
-                    <h3 class="h6 mb-0"><a class="d-block" data-toggle="collapse" href="#collapsecheque" role="button" aria-expanded="false" aria-controls="collapsecheque">Cheque Payment</a></h3>
-
-                    <div class="collapse" id="collapsecheque">
-                      <div class="py-2">
-                        <p class="mb-0">Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="border p-3 mb-5">
-                    <h3 class="h6 mb-0"><a class="d-block" data-toggle="collapse" href="#collapsepaypal" role="button" aria-expanded="false" aria-controls="collapsepaypal">Paypal</a></h3>
-
-                    <div class="collapse" id="collapsepaypal">
-                      <div class="py-2">
-                        <p class="mb-0">Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.</p>
-                      </div>
-                    </div>
-                  </div>
-
+                  
                   <div class="form-group">
                     <button class="btn btn-primary btn-lg py-3 btn-block" onclick="window.location='thankyou.html'">Place Order</button>
                   </div>
-
+                  
                 </div>
               </div>
             </div>
@@ -377,27 +408,17 @@
             <a href="#" class="block-6">
               <img src="images/hero_1.jpg" alt="Image placeholder" class="img-fluid rounded mb-4">
               <h3 class="font-weight-light  mb-0">Finding Your Perfect Shoes</h3>
-              <p>Promo from  nuary 15 &mdash; 25, 2019</p>
+              <p>Promo from  january 15 &mdash; 25, 2019</p>
             </a>
           </div>
           <div class="col-md-6 col-lg-3">
             <div class="block-5 mb-5">
               <h3 class="footer-heading mb-4">Contact Info</h3>
               <ul class="list-unstyled">
-                <li class="address">203 Fake St. Mountain View, San Francisco, California, USA</li>
-                <li class="phone"><a href="tel://23923929210">+2 392 3929 210</a></li>
-                <li class="email">emailaddress@domain.com</li>
+                <li class="address">Indonesia. Jawa Timur, Surabaya</li>
+                <li class="phone"><a href="tel://23923929210">+62 851 2222 3333</a></li>
+                <li class="email">Outfitku@gmail.com</li>
               </ul>
-            </div>
-
-            <div class="block-7">
-              <form action="#" method="post">
-                <label for="email_subscribe" class="footer-heading">Subscribe</label>
-                <div class="form-group">
-                  <input type="text" class="form-control py-4" id="email_subscribe" placeholder="Email">
-                  <input type="submit" class="btn btn-sm btn-primary" value="Send">
-                </div>
-              </form>
             </div>
           </div>
         </div>
