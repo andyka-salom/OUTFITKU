@@ -4,8 +4,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Outfitku</title>
+  <title>Detail Product</title>
   <link rel="stylesheet" href="../assets/css/styles.min.css" />
+  <style>
+    #productImage {
+      width: 100%;
+      max-width: 300px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
 
 <body>
@@ -15,7 +23,7 @@
       <div>
         <div class="brand-logo d-flex align-items-center justify-content-between">
           <a href="./index.html" class="text-nowrap logo-img">
-            <img src="../images/Screenshot 2024-06-08 204439.png" width="180" alt="" />
+            <img src="../images/Screenshot 2024-06-08 204439.png" width="180" alt="Outfitku Logo" />
           </a>
           <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
             <i class="ti ti-x fs-8"></i>
@@ -88,7 +96,7 @@
               <li class="nav-item dropdown">
                 <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
                   aria-expanded="false">
-                  <img src="../assets/images/profile/user-1.jpg" alt="" width="35" height="35" class="rounded-circle">
+                  <img src="../assets/images/profile/user-1.jpg" alt="User Profile" width="35" height="35" class="rounded-circle">
                 </a>
                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
                   <div class="message-body">
@@ -100,47 +108,32 @@
           </div>
         </nav>
       </header>
-      <!--  Header End -->
-      <!-- <div class="container-fluid"> -->
-        <div class="container-fluid">
-          <div class="card">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-md-12 mb-3">
-                  <button id="addArticleBtn" class="btn btn-success" onclick="location.href='add-article.html';">Add Article</button>
-              </div>              
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="../images/smiling-woman-stylish-orange-outfit-straw-hat-chilling-deck-chair-near-pool.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Mix and Match Outfit Kasual untuk Sehari-hari: Ide Padu Padan yang Modis</h5>
-                      <p class="card-text">Tampil modis setiap hari tidak harus sulit dengan trik mix and match yang tepat.</p>
-                      <a href="detail-artikel.html" class="btn btn-primary">Detail</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="../images/full-shot-smiley-man-with-trucker-hat.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Panduan Memilih Outfit untuk Acara Formal: Tips Tampil Menawan</h5>
-                      <p class="card-text">Memilih outfit untuk acara formal bisa menjadi tantangan.</p>
-                      <a href="detail-artikel.html" class="btn btn-primary">Detail</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="../images/close-up-clothes-hanging-rack.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Tren Outfit Terkini untuk Musim Panas 2024: Gaya Santai dan Elegan</h5>
-                      <p class="card-text">Musim panas 2024 menghadirkan tren outfit yang menggabungkan kenyamanan</p>
-                      <a href="detail-artikel.html" class="btn btn-primary">Detail</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+      <div class="container-fluid">
+        <div class="card" style="padding: 20px;">
+          <div id="productDetail" class="row">
+            <div class="col-md-6 text-center">
+              <img id="productImage" src="../images/sepatu.jpg" class="img-fluid" alt="Sneakers">
             </div>
+            <div class="col-md-6">
+              <h2 id="productName">Sneakers</h2>
+              <h3 id="productPrice">Rp 50.000</h3>
+              <p id="productDescription">
+                Sneakers are versatile, comfortable, and stylish footwear suitable for various occasions. 
+                These shoes are designed with a blend of fashion and functionality in mind, offering support and 
+                cushioning for everyday activities. Whether you're running errands, meeting friends, or going for a walk, 
+                sneakers provide the perfect combination of comfort and style.
+              </p>
+              <form id="stockForm">
+                <div class="mb-3">
+                  <label for="stockInput" class="form-label">Stok</label>
+                  <input type="number" id="stockInput" name="stockInput" class="form-control" value="10" min="0">
+                </div>
+                <button type="submit" class="btn btn-primary">Simpan Stok</button>
+              </form>
+            </div>
+          </div>
+          <div class="text-center mt-4">
+            <button onclick="history.back()" class="btn btn-secondary" style="width: 250px;">Kembali</button>
           </div>
         </div>
       </div>
@@ -151,7 +144,15 @@
   <script src="../assets/js/sidebarmenu.js"></script>
   <script src="../assets/js/app.min.js"></script>
   <script src="../assets/libs/simplebar/dist/simplebar.js"></script>
-  <script src="../js/login.js"></script>
+  <script>
+    // Simpan stok saat form disubmit
+    document.getElementById('stockForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      var newStock = document.getElementById('stockInput').value;
+      alert('Stok berhasil diperbarui menjadi ' + newStock);
+      // Anda bisa menambahkan logika untuk mengirim data stok ke backend di sini
+    });
+  </script>
 </body>
 
 </html>

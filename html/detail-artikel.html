@@ -4,8 +4,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Outfitku</title>
+  <title>Outfitku - Detail Artikel</title>
   <link rel="stylesheet" href="../assets/css/styles.min.css" />
+  <style>
+    .card-img-top {
+      width: 100%;
+      height: auto;
+      max-width: 400px; 
+      margin: 10px auto; 
+    }
+  </style>
 </head>
 
 <body>
@@ -15,7 +23,7 @@
       <div>
         <div class="brand-logo d-flex align-items-center justify-content-between">
           <a href="./index.html" class="text-nowrap logo-img">
-            <img src="../images/Screenshot 2024-06-08 204439.png" width="180" alt="" />
+            <img src="../images/Screenshot 2024-06-08 204439.png" width="180" alt="Outfitku Logo" />
           </a>
           <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
             <i class="ti ti-x fs-8"></i>
@@ -88,7 +96,7 @@
               <li class="nav-item dropdown">
                 <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
                   aria-expanded="false">
-                  <img src="../assets/images/profile/user-1.jpg" alt="" width="35" height="35" class="rounded-circle">
+                  <img src="../assets/images/profile/user-1.jpg" alt="User Profile" width="35" height="35" class="rounded-circle">
                 </a>
                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
                   <div class="message-body">
@@ -100,43 +108,32 @@
           </div>
         </nav>
       </header>
-      <!--  Header End -->
-      <!-- <div class="container-fluid"> -->
-        <div class="container-fluid">
-          <div class="card">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-md-12 mb-3">
-                  <button id="addArticleBtn" class="btn btn-success" onclick="location.href='add-article.html';">Add Article</button>
-              </div>              
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="../images/smiling-woman-stylish-orange-outfit-straw-hat-chilling-deck-chair-near-pool.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Mix and Match Outfit Kasual untuk Sehari-hari: Ide Padu Padan yang Modis</h5>
-                      <p class="card-text">Tampil modis setiap hari tidak harus sulit dengan trik mix and match yang tepat.</p>
-                      <a href="detail-artikel.html" class="btn btn-primary">Detail</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="../images/full-shot-smiley-man-with-trucker-hat.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Panduan Memilih Outfit untuk Acara Formal: Tips Tampil Menawan</h5>
-                      <p class="card-text">Memilih outfit untuk acara formal bisa menjadi tantangan.</p>
-                      <a href="detail-artikel.html" class="btn btn-primary">Detail</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="../images/close-up-clothes-hanging-rack.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Tren Outfit Terkini untuk Musim Panas 2024: Gaya Santai dan Elegan</h5>
-                      <p class="card-text">Musim panas 2024 menghadirkan tren outfit yang menggabungkan kenyamanan</p>
-                      <a href="detail-artikel.html" class="btn btn-primary">Detail</a>
-                    </div>
+      <div class="container-fluid">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card">
+                  <img src="../images/smiling-woman-stylish-orange-outfit-straw-hat-chilling-deck-chair-near-pool.jpg" class="card-img-top" alt="Outfit Image">
+                  <div class="card-body">
+                    <h5 class="card-title">Mix and Match Outfit Kasual untuk Sehari-hari: Ide Padu Padan yang Modis</h5>
+                    <p class="card-text">Tampil modis setiap hari tidak harus sulit dengan trik mix and match yang tepat. Pelajari cara memadukan pakaian untuk menciptakan tampilan kasual yang sempurna untuk aktivitas sehari-hari.</p>
+                    <p>Tampil modis setiap hari bisa menjadi tugas yang menantang bagi sebagian dari kita. Tetapi, dengan sedikit kreativitas dan beberapa trik mix and match yang tepat, kamu bisa membuat gaya pribadimu sendiri tanpa harus repot-repot membeli pakaian baru setiap waktu. Mari kita jelajahi beberapa tips sederhana untuk memaksimalkan potongan-potongan dasar dalam lemari pakaianmu. <br> 1. Investasikan dalam Potongan Dasar yang Serbaguna
+                        Kunci pertama untuk mix and match yang sukses adalah memiliki beberapa potongan dasar yang serbaguna dalam koleksi pakaianmu. Kaos putih, celana jeans, rok hitam, dan jaket denim adalah contoh-contoh potongan dasar yang bisa kamu andalkan.
+                    </br>2. Pahami Warna dan Pola
+                        Memahami prinsip dasar tentang pemilihan warna dan pola juga penting dalam mix and match yang sukses. Jika kamu merasa kurang percaya diri dalam mencocokkan warna, mulailah dengan palet netral seperti hitam, putih, abu-abu, dan nude. Warna-warna ini mudah dipadukan dan selalu terlihat elegan. Jika ingin memasukkan pola, pastikan untuk memilih pola yang seimbang dan tidak terlalu mencolok, agar tidak mengalihkan perhatian dari potongan utama.
+                        
+                    </br>3. Layering adalah Kunci
+                        Layering adalah teknik yang sangat berguna dalam mix and match. Misalnya, kenakan kaos berkerah di bawah sweater atau blazer untuk tampilan yang lebih formal namun tetap santai. Atau tambahkan jaket denim di atas gaun atau jumpsuit untuk sentuhan kasual yang stylish. Layering tidak hanya menambah dimensi pada busana, tetapi juga memungkinkanmu untuk menyesuaikan gaya sesuai dengan cuaca atau suasana.
+                        
+                    </br>4. Aksesoris untuk Sentuhan Akhir
+                        Aksesoris adalah kunci untuk menyelesaikan tampilan dengan sempurna. Bahkan, dengan menggunakan potongan dasar yang sama, kamu bisa menciptakan gaya yang berbeda-beda hanya dengan mengganti aksesorisnya. Misalnya, tambahkan perhiasan statement untuk tampilan yang lebih glamor, atau kenakan syal yang berwarna cerah untuk sentuhan yang menyegarkan. Tas, sepatu, dan ikat pinggang juga bisa menjadi poin fokus yang memperkaya tampilan secara keseluruhan.
+                    </br>5. Eksperimen dan Bersenang-senang
+                        Yang terpenting dari semua tips ini adalah untuk tetap eksperimen dan bersenang-senang dengan gayamu. Jangan takut untuk mencoba kombinasi yang berbeda-beda, dan jangan terlalu keras pada dirimu sendiri jika sesuatu tidak terlihat sempurna pada awalnya. Mix and match adalah tentang mengeksplorasi kreativitasmu dan menemukan gaya yang benar-benar mencerminkan kepribadianmu.
+                        
+                        Dengan mengikuti tips-tips sederhana ini, kamu akan dapat mengoptimalkan potongan-potongan pakaian dalam lemari pakaianmu dan tampil modis setiap hari tanpa harus repot. Ingatlah bahwa gayamu adalah ekspresi dari siapa dirimu, jadi jadilah percaya diri dan nikmati setiap momen dalam berbusana!</p>
+              
+                    <button onclick="goBack()" class="btn btn-primary">Kembali</button>
                   </div>
                 </div>
               </div>
@@ -152,6 +149,11 @@
   <script src="../assets/js/app.min.js"></script>
   <script src="../assets/libs/simplebar/dist/simplebar.js"></script>
   <script src="../js/login.js"></script>
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
 </body>
 
 </html>
